@@ -7,3 +7,11 @@ Transformers completely from scratch! This is a project I've worked on for a whi
 > decoder_transformer_pytorch: an example of a decoder-only transformer built using PyTorch. This one can be trained on the 'tiny shakespeare' dataset, which is a text dataset containing shakespearean text. More complex, using RMSNorm, full MHA, residual connections, mini-batches, and AdamW.
 
 > decoder_transformer_numpy: same architecture as decoder_transformer_pytorch (full MHA, RMSNorm, etc.), but implemented using only numpy! CuPy is used for training (basically GPU numpy). I have included my forward and backprop calculations (with the shapes of everything) if you want to try to implement it yourself!
+
+## Full Transformers Forward + Backprop
+
+> B = Batch size
+
+> L = Batch sequence length
+
+> 'B' or 'L' drawn in red = sum and average over dimension
